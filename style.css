@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+
+.nav-search img {
+    filter: invert(100%);
+
+}
+
+.nav-icon img {
+    margin: 0 10px;
+    filter: invert(100%);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 2em sans-serif;
+    padding: 70px 0;
+}
+
+.title b {
+    position: relative;
+    background-color: black;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.title b::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: writing 3s linear infinite;
+}
+
+@keyframes writing {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+/* FASHION SECTION  */
+.fashion {
+    background-image: url(img/jane.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    padding: 150px 30px;
+}
+
+.fashion h2 {
+    font-size: 70px;
+    margin: 10px 0px;
+}
+
+.fashion h1 {
+    margin: 10px 0px;
+    font-size: 80px;
+}
+
+.fashion button {
+    font-size: 25px;
+    border: none;
+    color: beige;
+    padding: 10px 40px;
+    background-color: #f44336;
+    margin: 10px 10px;
+}
+
+.fashion button:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* BLOGS SECTION  */
+
+.blogs {
+    display: flex;
+}
+
+/* container1 */
+.Morehats {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.Morehats img {
+    width: 100%;
+}
+
+.Morehats h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.Morehats h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.Morehats p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.Morehats b {
+    color: rgb(158, 156, 156);
+}
+
+/* container1 button  */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.buttons button:hover {
+    background-color: rgb(158, 156, 156);
+}
+
+.buttons img {
+    width: 25px;
+}
+
+.buttons img:hover {
+    filter: invert(100%);
+}
+
+.buttons .comment-box {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+/* container1 comment  */
+.comment-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.comment-container img {
+    width: 80px;
+    /* border-radius: 100px; */
+    margin: 0px 20px;
+}
+
+.comment-container h4 {
+    font-size: 25px;
+    text-align: left;
+}
+
+/* container2 */
+.Morehats2 {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 20px 10px;
+}
+
+.Morehats2-text {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.Morehats2 h4 {
+    font-size: 40px;
+}
+
+.Morehats2 p {
+    font-size: 25px;
+}
+
+.Morehats3 {
+    padding: 5px;
+    margin: 20px 7px;
+}
+
+.Popular {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+
+}
+
+.Popular-box {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+
+.Popular-box:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.Popular-box h1 {
+    font-size: 40px;
+    padding: 0 100px;
+}
+
+.Popularinbox {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    background-color: rgb(241, 241, 241);
+}
+
+.Popular-in-box {
+    text-align: center;
+    margin: 150px auto;
+    font-size: 20px;
+
+}
+
+.Tags {
+    border: 2px solid black;
+}
+
+.Tags p {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.Inspiration {
+    border: 2px solid black;
+
+}
+
+.Inspiration-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Inspiration-img img {
+    height: 140px;
+    margin: 10px;
+}
+
+.Follow-Me {
+    border: 2px solid black;
+}
+
+.Follow-Me-img {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.Subscribe {
+    border: 2px solid black;
+}
+
+.Subscribe-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.Subscribe-text p {
+    font-size: 25px;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.Subscribe-text input {
+    font-size: 25px;
+    width: 100%;
+    padding: 10px;
+    margin:10px 0;
+    border: 2px solid black;
+}
+
+.Subscribe-text button {
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    color: beige;
+    padding: 10px;
+    background-color: #f44336;
+}
+
+.Subscribe-text button:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+/* footer  */
+footer {
+    background-color: grey;
+    padding: 40px;
+}
+
+footer button {
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer button:hover {
+    background-color: rgb(149, 146, 146);
+}
+
+footer span {
+    filter: invert(100%);
+}
+
+footer h2 {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE CSS  */
+
+@media screen and (max-width: 350px) {
+    .Inspiration-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 390px) {
+    .Popular-box h1 {
+        font-size: 30px;
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Inspiration-img img {
+        height: 100px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .title {
+        font: 1.2em sans-serif;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    .fashion {
+        height: 70vh;
+    }
+
+    .fashion h2 {
+        font-size: 50px;
+        margin: 10px 0px;
+    }
+
+    .fashion h1 {
+        margin: 10px 0px;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .blogs {
+        display: flex;
+        flex-direction: column;
+    }
+}
